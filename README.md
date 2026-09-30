@@ -20,9 +20,12 @@ The brief became bigger than “make a barber logo.” It became a launch platfo
 
 ## What shipped
 
-- A distinct **Tito On Call** identity with an electric-lime clipper-tooth `T` mark
+- A distinct **Tito On Call** identity with a forward-leaning red `T`, white clipper detail and black badge
 - A customer booking journey for visits and mobile callouts
 - A fixed N$70 base cut, with transparent N$50 / N$80 / N$110 travel additions
+- Same-place group bookings for 2–5 people: N$10 off every cut and one travel fee for the location
+- An installable Tito Pass with secure registration, remembered details, booking history and 90-day device sessions
+- Return-client perks: every completed cut earns a stamp and five stamps unlock N$20 off a future cut
 - Nearby, standard Windhoek and outer-Windhoek callout ranges
 - eWallet and bank-transfer choices without pretending payment-provider automation exists
 - Request notes for fades, designs, beard work, reference-photo follow-up and setup details
@@ -41,6 +44,8 @@ The brief became bigger than “make a barber logo.” It became a launch platfo
 | Nearby callout | N$120 | N$70 cut + N$50 travel |
 | Standard Windhoek | N$150 | N$70 cut + N$80 travel |
 | Outer Windhoek | N$180 | N$70 cut + N$110 travel |
+
+For groups of 2–5 at the same place, each cut becomes N$60 and the group pays the travel fee once. A three-person standard-Windhoek callout is therefore N$260: N$180 for three cuts plus N$80 travel. The schedule reserves the whole group window and rejects overlapping or too-late bookings.
 
 The haircut does not become artificially expensive because it is mobile. Distance adds the travel fee. The fee is shown before booking and paid before Tito moves; the cut balance is paid after the service.
 
@@ -68,7 +73,7 @@ The exact chair location, mobile number and payment destination were not supplie
 
 ### Motion with purpose
 
-Black, warm white, electric lime and orange create a streetwear/editorial identity with hard borders, offset shadows and short reveal/float/pulse motion. The system stays readable without animation and respects `prefers-reduced-motion`.
+Ink black, warm white and barber red create a classic editorial identity with an italic serif voice, hard borders, offset shadows and short reveal/float/pulse motion. The `T` itself leans forward, combining a red core with white clipper teeth and blade detail. The system stays readable without animation and respects `prefers-reduced-motion`.
 
 ## Architecture
 
@@ -76,7 +81,7 @@ Black, warm white, electric lime and orange create a streetwear/editorial identi
 Customer booking UI
         │
         ├── public settings API ── pricing + open days
-        ├── booking API ────────── slot and workday validation
+        ├── booking API ────────── overlap, group-time and workday validation
         │                               │
         │                               ▼
         │                         Cloudflare D1
@@ -85,7 +90,7 @@ Customer booking UI
                                         └── bookings · payments · events · availability
 ```
 
-The production implementation uses Vinext/React, TypeScript, accessible UI primitives, Cloudflare edge execution, D1 and Drizzle-managed SQL migrations. Production source, credentials, customer data and deployment configuration remain private.
+The production implementation uses Vinext/React, TypeScript, accessible UI primitives, an installable service-worker shell, Cloudflare edge execution, D1 and Drizzle-managed SQL migrations. Customer PINs use PBKDF2; session tokens are stored hashed; repeated login failures are throttled. Production source, credentials, customer data and deployment configuration remain private.
 
 ## Privacy and operational boundary
 
