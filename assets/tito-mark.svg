@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Tito On Call mark</title>
+  <desc id="desc">A sharp letter T inspired by a barber line-up and clipper teeth.</desc>
+  <rect width="96" height="96" rx="22" fill="#d9ff43"/>
+  <path fill="#0a0b0b" d="M18 20h60v16H57v42H39V36H18z"/>
+  <path fill="#0a0b0b" d="M18 12h8v8h-8zm13 0h8v8h-8zm13 0h8v8h-8zm13 0h8v8h-8zm13 0h8v8h-8z"/>
+  <path fill="#0a0b0b" d="M57 50l21-10v16L57 66z"/>
+</svg>
