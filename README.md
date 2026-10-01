@@ -110,4 +110,4 @@ Product strategy · brand direction · identity design · pricing model · servi
 
 ---
 
-A Digital Experience by **[Freeman Ipumbu](https://freeman-ipumbu.pages.dev/)** for a young Namibian barber whose talent deserves a bigger stage.
+**A Digital Experience by [SolarSpin Technologies](https://freeman-ipumbu.pages.dev/)** for a young Namibian barber whose talent deserves a bigger stage.
