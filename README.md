@@ -67,9 +67,9 @@ Customer numbers, addresses, money status and controls are never returned by the
 
 The platform begins with Tito’s personal reputation. A multi-barber marketplace before the first barber has demand would dilute the story, complicate trust and turn a human launch into a generic directory. The architecture can later expand into a vetted barber network once Tito’s own operating model is proven.
 
-### No invented business details
+### Confirmed details only
 
-The exact chair location, mobile number and payment destination were not supplied. The interface therefore says Tito will confirm them directly instead of publishing placeholders as if they were real.
+Tito’s confirmed call and WhatsApp number, **[+264 85 785 0130](https://wa.me/264857850130)**, is published across the experience. His exact chair location, payment destination and future social profiles stay unpublished until he confirms them; the interface never invents placeholders as if they were real.
 
 ### Motion with purpose
 
