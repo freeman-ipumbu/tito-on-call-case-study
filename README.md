@@ -35,6 +35,7 @@ The brief became bigger than “make a barber logo.” It became a launch platfo
 - Search, attention and callout filters; payment status; booking progression; cancellation history
 - Live working-day and pricing controls backed by Cloudflare D1
 - Reduced-motion support, mobile hardening and a cinematic editorial interaction system
+- A real-work cut archive: two chair-cam reels, five multi-angle haircut studies and an accessible tap-to-expand detail viewer
 
 ## Fair callout economics
 
@@ -74,6 +75,10 @@ Tito’s confirmed call and WhatsApp number, **[+264 85 785 0130](https://wa.me/
 ### Motion with purpose
 
 Ink black, warm white and barber red create a classic editorial identity with an italic serif voice, hard borders, offset shadows and short reveal/float/pulse motion. The `T` itself leans forward, combining a red core with white clipper teeth and blade detail. The system stays readable without animation and respects `prefers-reduced-motion`.
+
+### Proof before polish
+
+Tito’s own photos and short chair-cam clips now lead the experience. The content is grouped by technique—line-up, temple control, low fade, texture and classic short cuts—so potential clients see the range of the work instead of a generic gallery dump. Frames exposing a house number or identifiable vehicle context were excluded from the published portfolio.
 
 ## Architecture
 
